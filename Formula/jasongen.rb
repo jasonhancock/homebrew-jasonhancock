@@ -5,20 +5,20 @@
 class Jasongen < Formula
   desc "jasongen openapi code generator"
   homepage "https://github.com/jasonhancock/jasongen"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     on_intel do
-      url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.6/jasongen_0.0.6_darwin_amd64.tar.gz"
-      sha256 "0098ab36bb8fff4df6300cce1d10db070fbfa1a38bab55111a7db1c4071f8857"
+      url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.7/jasongen_0.0.7_darwin_amd64.tar.gz"
+      sha256 "0de7ca7944d6375dd3ba6973745628079b0fdb7c79edc1d12740458c21fd7a43"
 
       def install
         bin.install "jasongen"
       end
     end
     on_arm do
-      url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.6/jasongen_0.0.6_darwin_arm64.tar.gz"
-      sha256 "8cce70bc19da6a9fb0c323a5257390a473c1a7268acf56f2ac9b81d3d85e8b68"
+      url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.7/jasongen_0.0.7_darwin_arm64.tar.gz"
+      sha256 "8d1bc8be2b03c9066f99065deb77a53b84d4e3448e02f86be2db2b396391a31b"
 
       def install
         bin.install "jasongen"
@@ -29,8 +29,8 @@ class Jasongen < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.6/jasongen_0.0.6_linux_amd64.tar.gz"
-        sha256 "b64d261da59b5dad4a9271d66b96f4302d8aa437b9b1888eb09b2fd4dbeefe65"
+        url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.7/jasongen_0.0.7_linux_amd64.tar.gz"
+        sha256 "b289a40addd548fc94e843993417406086fc96f53cdd8d05444171a92e02e23a"
 
         def install
           bin.install "jasongen"
@@ -39,8 +39,8 @@ class Jasongen < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.6/jasongen_0.0.6_linux_arm64.tar.gz"
-        sha256 "2c223d8067c6e9680c87bc4eecfb7b6a4a5ec2d8334168bcce44765a48fc25bf"
+        url "https://github.com/jasonhancock/jasongen/releases/download/v0.0.7/jasongen_0.0.7_linux_arm64.tar.gz"
+        sha256 "772ef637c1eea5d4f5b3be43e7521dd848202b5c111082347f916759c88b5ac3"
 
         def install
           bin.install "jasongen"
